@@ -14,9 +14,10 @@ Note: Oasys has moved to release 1.1! Oasys 1 beta and Oasys 1.0 users are warml
 - for Mac OSX ( <= 10.9) binary versions are available at: https://drive.elettra.eu/lib/ed328999-be9f-4570-b1a0-7a712e695f17/file/Oasys1.1.dmg (Elettra Drive) or http://ftp.esrf.eu/pub/scisoft/Oasys/Oasys1.1_OSX10.8.dmg (ESRF ftp)
 - Linux (Ubuntu >= 16.04) users can install Oasys by following this wiki page instructions in their environment: https://github.com/srio/oasys-installation-scripts/wiki/Installing-Oasys-in-Linux-(debian-ubuntu)
 - Windows users can install Ubuntu 18.04 LTS on an Oracle VirtualBox and follow the previous instructions or can download an Oracle VirtualBox preconfigured file https://drive.elettra.eu/f/be326d538f9b4fb3a8aa/?dl=1 (Elettra Drive) or http://ftp.esrf.eu/pub/scisoft/Oasys/OASYS-Ubuntu%2018.04.vdi (ESRF ftp)
-Note: MacOSX users: please read carefully the instructions here: https://github.com/oasys-kit/oasys-installation-scripts/wiki/Installation-of-Oasys-in-a-Mac-(binaries)
 
-(Windows users only) Oracle VirtualBox can be dowloaded here: https://www.virtualbox.org/wiki/Downloads
+Notes: 
+- MacOSX users: please read carefully the instructions here: https://github.com/oasys-kit/oasys-installation-scripts/wiki/Installation-of-Oasys-in-a-Mac-(binaries)
+- (Windows users only) Oracle VirtualBox can be dowloaded here: https://www.virtualbox.org/wiki/Downloads
 
 The release already includes ShadowOui, the OASYS user interface for shadow3, the ray-tracing simulation software, and XOPPY, the python version of XOP.
 
