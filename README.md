@@ -28,13 +28,20 @@ The release already includes ShadowOui, the OASYS user interface for shadow3, th
 - XOPPY: https://github.com/oasys-kit/XOPPY
 - Shadow3 Tutorials for ShadowOui are available at: https://github.com/oasys-kit/ShadowOui-Tutorial
 
-## Reference
+## References
 
-- M. Sancez del Rio, L. Rebuffi, J. Demšar, N.Canestrari and O. Chubar, "A proposal for an open source graphical environment for simulating X-ray optics", Proc. SPIE 9209, 92090X (2014) 
-- M. Sanchez del Rio, D. Bianchi, D. Cocco, M. Glass, M. Idir, J. Metz, L. Raimondi, L. Rebuffi, R. Reininger, X. Shi, F. Siewert, S. Spielmann-Jaeggi, P. Takacs, M. Tomasset, T. Tonnessen, A. Vivo and V. Yashchuk, "DABAM: an open-source database of X-ray mirrors metrology", J. Synchrotron Rad. 23 (2016)
-- L. Rebuffi, M. Sanchez del Rio, "ShadowOui: A new visual environment for X-ray optics and synchrotron beamline simulations”, J. Synchrotron Rad. 23 (2016)
-- L. Rebuffi, M. Sanchez del Rio, "OASYS (OrAnge SYnchrotron Suite): an open-source graphical environment for x-ray virtual xperiments”, Proc. SPIE 10388, 103880S (2017) 
-- L. Rebuffi, M. Sanchez del Rio, "Interoperability and complementarity of simulation tools for beamline design in the OASYS environment”, Proc. SPIE 10388, 1038808 (2017) 
+When citing OASYS, this is the official reference: 
+- L. Rebuffi, M. Sanchez del Rio, "OASYS (OrAnge SYnchrotron Suite): an open-source graphical environment for x-ray virtual xperiments”, Proc. SPIE 10388, 103880S (2017) http://dx.doi.org/10.1117/12.2274263
+
+Other publications: 
+
+- M. Sanchez del Rio, Luca Rebuffi "OASYS : A software for beamline simulations and synchrotron virtual experiments" AIP Conference Proceedings 2054:  1. (2019)  http://dx.doi.org/10.1063/1.5084712
+- L. Rebuffi, M. Sanchez del Rio, "Interoperability and complementarity of simulation tools for beamline design in the OASYS environment”, Proc. SPIE 10388, 1038808 (2017) http://dx.doi.org/10.1117/12.2274232
+- L. Rebuffi, M. Sanchez del Rio, "ShadowOui: A new visual environment for X-ray optics and synchrotron beamline simulations”, J. Synchrotron Rad. 23 (2016) http://dx.doi.org/10.1107/S1600577516013837
+- M. Sanchez del Rio, D. Bianchi, D. Cocco, M. Glass, M. Idir, J. Metz, L. Raimondi, L. Rebuffi, R. Reininger, X. Shi, F. Siewert, S. Spielmann-Jaeggi, P. Takacs, M. Tomasset, T. Tonnessen, A. Vivo and V. Yashchuk, "DABAM: an open-source database of X-ray mirrors metrology", J. Synchrotron Rad. 23 (2016) http://dx.doi.org/10.1107/S1600577516005014
+- M. Sancez del Rio, L. Rebuffi, J. Demšar, N.Canestrari and O. Chubar, "A proposal for an open source graphical environment for simulating X-ray optics", Proc. SPIE 9209, 92090X (2014) http://dx.doi.org/10.1117/12.2061834
+
+
 
 ## Contact
 
