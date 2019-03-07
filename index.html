@@ -1,419 +1,100 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
-<title>README.md</title>
-<style type="text/css">
-
-/*
-:Author: David Goodger (goodger@python.org)
-:Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
-:Copyright: This stylesheet has been placed in the public domain.
-
-Default cascading style sheet for the HTML output of Docutils.
-
-See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
-customize this style sheet.
-*/
-
-/* used to remove borders from tables and images */
-.borderless, table.borderless td, table.borderless th {
-  border: 0 }
-
-table.borderless td, table.borderless th {
-  /* Override padding for "table.docutils td" with "! important".
-     The right padding separates the table cells. */
-  padding: 0 0.5em 0 0 ! important }
-
-.first {
-  /* Override more specific margin styles with "! important". */
-  margin-top: 0 ! important }
-
-.last, .with-subtitle {
-  margin-bottom: 0 ! important }
-
-.hidden {
-  display: none }
-
-.subscript {
-  vertical-align: sub;
-  font-size: smaller }
-
-.superscript {
-  vertical-align: super;
-  font-size: smaller }
-
-a.toc-backref {
-  text-decoration: none ;
-  color: black }
-
-blockquote.epigraph {
-  margin: 2em 5em ; }
-
-dl.docutils dd {
-  margin-bottom: 0.5em }
-
-object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
-  overflow: hidden;
-}
-
-/* Uncomment (and remove this text!) to get bold-faced definition list terms
-dl.docutils dt {
-  font-weight: bold }
-*/
-
-div.abstract {
-  margin: 2em 5em }
-
-div.abstract p.topic-title {
-  font-weight: bold ;
-  text-align: center }
-
-div.admonition, div.attention, div.caution, div.danger, div.error,
-div.hint, div.important, div.note, div.tip, div.warning {
-  margin: 2em ;
-  border: medium outset ;
-  padding: 1em }
-
-div.admonition p.admonition-title, div.hint p.admonition-title,
-div.important p.admonition-title, div.note p.admonition-title,
-div.tip p.admonition-title {
-  font-weight: bold ;
-  font-family: sans-serif }
-
-div.attention p.admonition-title, div.caution p.admonition-title,
-div.danger p.admonition-title, div.error p.admonition-title,
-div.warning p.admonition-title, .code .error {
-  color: red ;
-  font-weight: bold ;
-  font-family: sans-serif }
-
-/* Uncomment (and remove this text!) to get reduced vertical space in
-   compound paragraphs.
-div.compound .compound-first, div.compound .compound-middle {
-  margin-bottom: 0.5em }
-
-div.compound .compound-last, div.compound .compound-middle {
-  margin-top: 0.5em }
-*/
-
-div.dedication {
-  margin: 2em 5em ;
-  text-align: center ;
-  font-style: italic }
-
-div.dedication p.topic-title {
-  font-weight: bold ;
-  font-style: normal }
-
-div.figure {
-  margin-left: 2em ;
-  margin-right: 2em }
-
-div.footer, div.header {
-  clear: both;
-  font-size: smaller }
-
-div.line-block {
-  display: block ;
-  margin-top: 1em ;
-  margin-bottom: 1em }
-
-div.line-block div.line-block {
-  margin-top: 0 ;
-  margin-bottom: 0 ;
-  margin-left: 1.5em }
-
-div.sidebar {
-  margin: 0 0 0.5em 1em ;
-  border: medium outset ;
-  padding: 1em ;
-  background-color: #ffffee ;
-  width: 40% ;
-  float: right ;
-  clear: right }
-
-div.sidebar p.rubric {
-  font-family: sans-serif ;
-  font-size: medium }
-
-div.system-messages {
-  margin: 5em }
-
-div.system-messages h1 {
-  color: red }
-
-div.system-message {
-  border: medium outset ;
-  padding: 1em }
-
-div.system-message p.system-message-title {
-  color: red ;
-  font-weight: bold }
-
-div.topic {
-  margin: 2em }
-
-h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
-h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
-  margin-top: 0.4em }
-
-h1.title {
-  text-align: center }
-
-h2.subtitle {
-  text-align: center }
-
-hr.docutils {
-  width: 75% }
-
-img.align-left, .figure.align-left, object.align-left, table.align-left {
-  clear: left ;
-  float: left ;
-  margin-right: 1em }
-
-img.align-right, .figure.align-right, object.align-right, table.align-right {
-  clear: right ;
-  float: right ;
-  margin-left: 1em }
-
-img.align-center, .figure.align-center, object.align-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-table.align-center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.align-left {
-  text-align: left }
-
-.align-center {
-  clear: both ;
-  text-align: center }
-
-.align-right {
-  text-align: right }
-
-/* reset inner alignment in figures */
-div.align-right {
-  text-align: inherit }
-
-/* div.align-center * { */
-/*   text-align: left } */
-
-.align-top    {
-  vertical-align: top }
-
-.align-middle {
-  vertical-align: middle }
-
-.align-bottom {
-  vertical-align: bottom }
-
-ol.simple, ul.simple {
-  margin-bottom: 1em }
-
-ol.arabic {
-  list-style: decimal }
-
-ol.loweralpha {
-  list-style: lower-alpha }
-
-ol.upperalpha {
-  list-style: upper-alpha }
-
-ol.lowerroman {
-  list-style: lower-roman }
-
-ol.upperroman {
-  list-style: upper-roman }
-
-p.attribution {
-  text-align: right ;
-  margin-left: 50% }
-
-p.caption {
-  font-style: italic }
-
-p.credits {
-  font-style: italic ;
-  font-size: smaller }
-
-p.label {
-  white-space: nowrap }
-
-p.rubric {
-  font-weight: bold ;
-  font-size: larger ;
-  color: maroon ;
-  text-align: center }
-
-p.sidebar-title {
-  font-family: sans-serif ;
-  font-weight: bold ;
-  font-size: larger }
-
-p.sidebar-subtitle {
-  font-family: sans-serif ;
-  font-weight: bold }
-
-p.topic-title {
-  font-weight: bold }
-
-pre.address {
-  margin-bottom: 0 ;
-  margin-top: 0 ;
-  font: inherit }
-
-pre.literal-block, pre.doctest-block, pre.math, pre.code {
-  margin-left: 2em ;
-  margin-right: 2em }
-
-pre.code .ln { color: grey; } /* line numbers */
-pre.code, code { background-color: #eeeeee }
-pre.code .comment, code .comment { color: #5C6576 }
-pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
-pre.code .literal.string, code .literal.string { color: #0C5404 }
-pre.code .name.builtin, code .name.builtin { color: #352B84 }
-pre.code .deleted, code .deleted { background-color: #DEB0A1}
-pre.code .inserted, code .inserted { background-color: #A3D289}
-
-span.classifier {
-  font-family: sans-serif ;
-  font-style: oblique }
-
-span.classifier-delimiter {
-  font-family: sans-serif ;
-  font-weight: bold }
-
-span.interpreted {
-  font-family: sans-serif }
-
-span.option {
-  white-space: nowrap }
-
-span.pre {
-  white-space: pre }
-
-span.problematic {
-  color: red }
-
-span.section-subtitle {
-  /* font-size relative to parent (h1..h6 element) */
-  font-size: 80% }
-
-table.citation {
-  border-left: solid 1px gray;
-  margin-left: 1px }
-
-table.docinfo {
-  margin: 2em 4em }
-
-table.docutils {
-  margin-top: 0.5em ;
-  margin-bottom: 0.5em }
-
-table.footnote {
-  border-left: solid 1px black;
-  margin-left: 1px }
-
-table.docutils td, table.docutils th,
-table.docinfo td, table.docinfo th {
-  padding-left: 0.5em ;
-  padding-right: 0.5em ;
-  vertical-align: top }
-
-table.docutils th.field-name, table.docinfo th.docinfo-name {
-  font-weight: bold ;
-  text-align: left ;
-  white-space: nowrap ;
-  padding-left: 0 }
-
-/* "booktabs" style (no vertical lines) */
-table.docutils.booktabs {
-  border: 0px;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-  border-collapse: collapse;
-}
-table.docutils.booktabs * {
-  border: 0px;
-}
-table.docutils.booktabs th {
-  border-bottom: thin solid;
-  text-align: left;
-}
-
-h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
-h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
-  font-size: 100% }
-
-ul.auto-toc {
-  list-style-type: none }
-
-</style>
-</head>
-<body>
-<div class="document">
-
-
-<p>![OASYS logo](/oasys-splash-screen_2.png &quot;The OASYS logo&quot;)</p>
-<p># oasys.github.io  - The OASYS project website on github</p>
-<p>OASYS (OrAnge SYnchrotron Suite) is an open-source Graphical Environment for optic simulation softwares used in synchrotron facilities, based on Orange 3.</p>
-<p>## Download and Installation</p>
-<p>General and Installation instructions are available at OASYS INSTALLATION WIKI PAGE: <a class="reference external" href="https://github.com/oasys-kit/oasys-installation-scripts/wiki">https://github.com/oasys-kit/oasys-installation-scripts/wiki</a></p>
-<p>Note: Oasys has moved to release 1.1! Oasys 1 beta and Oasys 1.0 users are warmly invited to upgrade their experience with Oasys 1.1 by installing this last release:</p>
-<ul class="simple">
-<li>for Mac OSX ( &gt;= 10.10) binary versions are available at: <a class="reference external" href="https://drive.elettra.eu/f/2b5ee5e020054bcabe06/?dl=1">https://drive.elettra.eu/f/2b5ee5e020054bcabe06/?dl=1</a> (Elettra Drive) or <a class="reference external" href="http://ftp.esrf.eu/pub/scisoft/Oasys/Oasys1.1.dmg">http://ftp.esrf.eu/pub/scisoft/Oasys/Oasys1.1.dmg</a> (ESRF ftp)</li>
-<li>for Mac OSX ( &lt;= 10.9) binary versions are available at: <a class="reference external" href="https://drive.elettra.eu/lib/ed328999-be9f-4570-b1a0-7a712e695f17/file/Oasys1.1.dmg">https://drive.elettra.eu/lib/ed328999-be9f-4570-b1a0-7a712e695f17/file/Oasys1.1.dmg</a> (Elettra Drive) or <a class="reference external" href="http://ftp.esrf.eu/pub/scisoft/Oasys/Oasys1.1_OSX10.8.dmg">http://ftp.esrf.eu/pub/scisoft/Oasys/Oasys1.1_OSX10.8.dmg</a> (ESRF ftp)</li>
-<li>Linux (Ubuntu &gt;= 16.04) users can install Oasys by following this wiki page instructions in their environment: <a class="reference external" href="https://github.com/srio/oasys-installation-scripts/wiki/Installing-Oasys-in-Linux-(debian-ubuntu">https://github.com/srio/oasys-installation-scripts/wiki/Installing-Oasys-in-Linux-(debian-ubuntu</a>)</li>
-<li>Windows users can install Ubuntu 18.04 LTS on an Oracle VirtualBox and follow the previous instructions or can download an Oracle VirtualBox preconfigured file <a class="reference external" href="https://drive.elettra.eu/f/be326d538f9b4fb3a8aa/?dl=1">https://drive.elettra.eu/f/be326d538f9b4fb3a8aa/?dl=1</a> (Elettra Drive) or <a class="reference external" href="http://ftp.esrf.eu/pub/scisoft/Oasys/OASYS-Ubuntu%2018.04.vdi">http://ftp.esrf.eu/pub/scisoft/Oasys/OASYS-Ubuntu%2018.04.vdi</a> (ESRF ftp)</li>
-</ul>
-<p>Notes:
-- MacOSX users: please read carefully the instructions here: <a class="reference external" href="https://github.com/oasys-kit/oasys-installation-scripts/wiki/Installation-of-Oasys-in-a-Mac-(binaries">https://github.com/oasys-kit/oasys-installation-scripts/wiki/Installation-of-Oasys-in-a-Mac-(binaries</a>)
-- (Windows users only) Oracle VirtualBox can be dowloaded here: <a class="reference external" href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></p>
-<p>The release already includes ShadowOui, the OASYS user interface for shadow3, the ray-tracing simulation software, and XOPPY, the python version of XOP.</p>
-<p>## Source code repositories</p>
-<ul class="simple">
-<li>OASYS: <a class="reference external" href="https://github.com/oasys-kit/OASYS1">https://github.com/oasys-kit/OASYS1</a></li>
-<li>ShadowOui: <a class="reference external" href="https://github.com/oasys-kit/ShadowOui">https://github.com/oasys-kit/ShadowOui</a></li>
-<li>XOPPY: <a class="reference external" href="https://github.com/oasys-kit/XOPPY">https://github.com/oasys-kit/XOPPY</a></li>
-<li>Shadow3 Tutorials for ShadowOui are available at: <a class="reference external" href="https://github.com/oasys-kit/ShadowOui-Tutorial">https://github.com/oasys-kit/ShadowOui-Tutorial</a></li>
-</ul>
-<p>## References</p>
-<p>When citing OASYS, this is the official reference:
-- L. Rebuffi, M. Sanchez del Rio, &quot;OASYS (OrAnge SYnchrotron Suite): an open-source graphical environment for x-ray virtual xperiments”, Proc. SPIE 10388, 103880S (2017) <a class="reference external" href="http://dx.doi.org/10.1117/12.2274263">http://dx.doi.org/10.1117/12.2274263</a></p>
-<p>Other publications:</p>
-<ul class="simple">
-<li><ol class="first upperalpha" start="13">
-<li>Sanchez del Rio, Luca Rebuffi &quot;OASYS : A software for beamline simulations and synchrotron virtual experiments&quot; AIP Conference Proceedings 2054:  1. (2019)  <a class="reference external" href="http://dx.doi.org/10.1063/1.5084712">http://dx.doi.org/10.1063/1.5084712</a></li>
-</ol>
-</li>
-<li><ol class="first upperalpha" start="12">
-<li>Rebuffi, M. Sanchez del Rio, &quot;Interoperability and complementarity of simulation tools for beamline design in the OASYS environment”, Proc. SPIE 10388, 1038808 (2017) <a class="reference external" href="http://dx.doi.org/10.1117/12.2274232">http://dx.doi.org/10.1117/12.2274232</a></li>
-</ol>
-</li>
-<li><ol class="first upperalpha" start="12">
-<li>Rebuffi, M. Sanchez del Rio, &quot;ShadowOui: A new visual environment for X-ray optics and synchrotron beamline simulations”, J. Synchrotron Rad. 23 (2016) <a class="reference external" href="http://dx.doi.org/10.1107/S1600577516013837">http://dx.doi.org/10.1107/S1600577516013837</a></li>
-</ol>
-</li>
-<li><ol class="first upperalpha" start="13">
-<li>Sanchez del Rio, D. Bianchi, D. Cocco, M. Glass, M. Idir, J. Metz, L. Raimondi, L. Rebuffi, R. Reininger, X. Shi, F. Siewert, S. Spielmann-Jaeggi, P. Takacs, M. Tomasset, T. Tonnessen, A. Vivo and V. Yashchuk, &quot;DABAM: an open-source database of X-ray mirrors metrology&quot;, J. Synchrotron Rad. 23 (2016) <a class="reference external" href="http://dx.doi.org/10.1107/S1600577516005014">http://dx.doi.org/10.1107/S1600577516005014</a></li>
-</ol>
-</li>
-<li><ol class="first upperalpha" start="13">
-<li>Sancez del Rio, L. Rebuffi, J. Demšar, N.Canestrari and O. Chubar, &quot;A proposal for an open source graphical environment for simulating X-ray optics&quot;, Proc. SPIE 9209, 92090X (2014) <a class="reference external" href="http://dx.doi.org/10.1117/12.2061834">http://dx.doi.org/10.1117/12.2061834</a></li>
-</ol>
-</li>
-</ul>
-<p>## Contact</p>
-<p>For further information, paper preprints and bug reports please contact the OASYS developers: Luca Rebuffi and/or Manuel Sanchez del Rio.</p>
+<html>
+<div class="figure">
+<img src="oasys-splash-screen_2.png" align="middle">
 </div>
-</body>
+
+<h1 id="oasys.github.io---the-oasys-project-website-on-github">oasys.github.io - The OASYS project website on github</h1>
+
+<p>OASYS (OrAnge SYnchrotron Suite) is an open-source Graphical Environment for optic simulation softwares used in synchrotron facilities, based on Orange 3.</p>
+
+<h2 id="download-and-installation">Download and Installation</h2>
+
+<p>General and Installation instructions are available at OASYS INSTALLATION WIKI PAGE: 
+<a href="https://github.com/oasys-kit/oasys-installation-scripts/wiki">
+https://github.com/oasys-kit/oasys-installation-scripts/wiki</a>
+</p>
+<p>Note: Oasys has moved to release 1.1! Oasys 1 beta and Oasys 1.0 users are warmly invited to upgrade their experience with Oasys 1.1 by installing this last release:</p>
+
+<ul>
+<li>for Mac OSX ( &gt;= 10.10) binary versions are available at: 
+<a href="https://drive.elettra.eu/f/2b5ee5e020054bcabe06/?dl=1"> Elettra Drive </a> or 
+<a href="http://ftp.esrf.eu/pub/scisoft/Oasys/Oasys1.1.dmg"> ESRF ftp< </a>/li>
+<li>for Mac OSX ( &lt;= 10.9) binary versions are available at: 
+<a href="https://drive.elettra.eu/lib/ed328999-be9f-4570-b1a0-7a712e695f17/file/Oasys1.1.dmg"> Elettra Drive </a> or 
+<a href="http://ftp.esrf.eu/pub/scisoft/Oasys/Oasys1.1_OSX10.8.dmg"> ESRF ftp</a></li>
+<li>Linux (Ubuntu &gt;= 16.04) users can install Oasys by following 
+<a href="https://github.com/srio/oasys-installation-scripts/wiki/Installing-Oasys-in-Linux-(debian-ubuntu)">
+this wiki page instructions </a>
+in their environment: 
+</li>
+<li>Windows users can install Ubuntu 18.04 LTS on an Oracle VirtualBox and follow the previous instructions or can download an Oracle VirtualBox preconfigured file 
+<a href="https://drive.elettra.eu/f/be326d538f9b4fb3a8aa/?dl=1"> Elettra Drive </a> or 
+<a href="http://ftp.esrf.eu/pub/scisoft/Oasys/OASYS-Ubuntu%2018.04.vdi"> ESRF ftp</a></li>
+</ul>
+
+<p>Notes: 
+<ul>
+<li>MacOSX users: please read carefully the instructions 
+<a href="https://github.com/oasys-kit/oasys-installation-scripts/wiki/Installation-of-Oasys-in-a-Mac-(binaries)"> here</a>
+<li>Windows users only: Oracle VirtualBox can be dowloaded <a href="https://www.virtualbox.org/wiki/Downloads">here</a></p>
+</ul>
+
+<p>The release already includes ShadowOui, the OASYS user interface for shadow3, the ray-tracing simulation software, and XOPPY, the python version of XOP.</p>
+
+<h2 id="source-code-repositories">Source code repositories</h2>
+<ul>
+<li>OASYS: 
+<a href="https://github.com/oasys-kit/OASYS1">
+https://github.com/oasys-kit/OASYS1</a>
+</li>
+<li>ShadowOui: 
+<a href="https://github.com/oasys-kit/ShadowOui">
+https://github.com/oasys-kit/ShadowOui</a>
+</li>
+<li>XOPPY: 
+<a href="https://github.com/oasys-kit/XOPPY">
+https://github.com/oasys-kit/XOPPY</a>
+</li>
+<li>Shadow3 Tutorials for ShadowOui are available at: 
+<a href="https://github.com/oasys-kit/ShadowOui-Tutorial">
+https://github.com/oasys-kit/ShadowOui-Tutorial</a>
+</li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<p>When citing OASYS, this is the official reference: 
+<ul>
+<li>L. Rebuffi, M. Sanchez del Rio, &quot;OASYS (OrAnge SYnchrotron Suite): an open-source graphical environment for x-ray virtual xperiments”, Proc. SPIE 10388, 103880S (2017) 
+<a href=http://dx.doi.org/10.1117/12.2274263">
+http://dx.doi.org/10.1117/12.2274263</a>
+</p>
+
+<p>Other publications:</p>
+
+<ul>
+<li>M. Sanchez del Rio, Luca Rebuffi &quot;OASYS : A software for beamline simulations and synchrotron virtual experiments&quot; AIP Conference Proceedings 2054: 1. (2019) 
+<a  href="http://dx.doi.org/10.1063/1.5084712
+http://dx.doi.org/10.1063/1.5084712
+</a></li>
+<li>L. Rebuffi, M. Sanchez del Rio, &quot;Interoperability and complementarity of simulation tools for beamline design in the OASYS environment”, Proc. SPIE 10388, 1038808 (2017) 
+<a  href="http://dx.doi.org/10.1117/12.2274232">
+http://dx.doi.org/10.1117/12.2274232
+</a></li>
+<li>L. Rebuffi, M. Sanchez del Rio, &quot;ShadowOui: A new visual environment for X-ray optics and synchrotron beamline simulations”, J. Synchrotron Rad. 23 (2016) 
+<a  href="http://dx.doi.org/10.1107/S1600577516013837">
+http://dx.doi.org/10.1107/S1600577516013837
+</a></li>
+<li>M. Sanchez del Rio, D. Bianchi, D. Cocco, M. Glass, M. Idir, J. Metz, L. Raimondi, L. Rebuffi, R. Reininger, X. Shi, F. Siewert, S. Spielmann-Jaeggi, P. Takacs, M. Tomasset, T. Tonnessen, A. Vivo and V. Yashchuk, &quot;DABAM: an open-source database of X-ray mirrors metrology&quot;, J. Synchrotron Rad. 23 (2016) 
+<a  href="http://dx.doi.org/10.1107/S1600577516005014">
+http://dx.doi.org/10.1107/S1600577516005014
+</a></li>
+<li>M. Sancez del Rio, L. Rebuffi, J. Demšar, N.Canestrari and O. Chubar, &quot;A proposal for an open source graphical environment for simulating X-ray optics&quot;, Proc. SPIE 9209, 92090X (2014) 
+<a  href="http://dx.doi.org/10.1117/12.2061834">
+http://dx.doi.org/10.1117/12.2061834
+</a></li>
+</ul>
+
+<h2 id="contact">Contact</h2>
+<p>For further information, paper preprints and bug reports please contact the OASYS developers: Luca Rebuffi and/or Manuel Sanchez del Rio.</p>
 </html>
